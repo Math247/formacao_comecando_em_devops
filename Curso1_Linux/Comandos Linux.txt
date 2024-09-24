@@ -1,0 +1,67 @@
+Comandos Linux
+ls - lista os arquivos do diretório
+nano - abre editor de texto
+mkdir - cria repositório
+rm - exclui algo
+rmdir - eclui repositorio
+touch - cria um arquivo
+
+Maquina Virtual:
+
+Conectando SSH:
+na vm digite o comando ip address
+no cmd digite ssh usuario@ip
+digite  senha
+
+Automatização de tarefas:
+
+ex:
+
+#! /bin/bash
+
+diretorio_backup="/home/carregal/devops"
+nome_arquivo="backup_$(date +%Y%m%d_%H%M%S).tar.gz"
+tar -czf "$nome_arquivo" "$diretorio_backup"
+echo "Backup concluido em $nome_arquivo"
+
+condições:
+
+if [---]; then
+elif [---]; then
+else
+fi
+
+igualdade:
+
+if["$string1" = "$string2"]; then
+fi
+
+desigualdade:
+
+"$string1" != "$string2"
+
+igualdade dois números:
+
+"$numero1" -eq "$numero2"
+
+desigualdade:
+
+"$numero1" -ne "$numero2"
+
+maior:
+
+"$numero1" -gt "$numero2"
+
+menor:
+
+"$numero1" -lt "$numero2"
+
+maior ou iguala
+
+"$numero1" -ge "$numero2"
+
+verificando existência de um arquivo ou diretório:
+
+if [ -e "/caminho/do/arquivo"]; then
+
+fi
